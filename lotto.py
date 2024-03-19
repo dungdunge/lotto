@@ -144,6 +144,7 @@ def five_list(array):
     return result
 
 #현재 날짜에 따라 start,end 초기화
+global strat,end
 start=1109
 end=1110
 def set_date():
@@ -162,6 +163,7 @@ def set_date():
     
     if (date > 20240316):
         tmp = (date - 20240316)//7 + 1
+        global start,end
         start += tmp
         end += tmp
 lotto_results = []
